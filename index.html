@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 스크롤 -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--아이콘  -->
+    <script src="https://kit.fontawesome.com/0aa0dc2cc0.js" crossorigin="anonymous"></script>
+    <!--슬라이드 -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        /* General styles */
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 100px;
+            color: rgb(245, 185, 107);
+        }
+        
+        header nav {
+            background-color: orange; /* 주황색 배경색 적용 */
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+        }
+        
+        header nav ul li {
+            margin-right: 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        header nav ul li:hover {
+            color: gray;
+        }
+        
+        /* Main styles */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 20px; /* Adjust as needed */
+            background-color: rgb(248, 228, 192);
+            padding: 20px;
+        }
+        
+        .slide {
+            width: 100%; /* Full width */
+            max-width: 1000px; /* Max width for image slider */
+            height: auto; /* Automatically adjust height */
+            margin-bottom: 20px; /* Space between sections */
+        }
+        
+        .dd, .gg, .hh, .jj {
+            width: 100%; /* Full width */
+            max-width: 1000px; /* Max width for content */
+            text-align: center; /* Center align text */
+            margin-bottom: 20px; /* Space between sections */
+        }
+        
+        .dd img, .gg img, .hh img,.jj img {
+            max-width: 100%; /* Ensure images fit within container */
+            height: auto; /* Automatically adjust height */
+        }
+        
+        .kk {
+            margin-top: 20px; /* Adjust spacing */
+        }
+
+        footer {
+            background-color:  orange;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body style="background-color: white">
+    
+    <header>
+    <h1 style="font-size: 100px; color: rgb(245, 185, 107);">선후여행사</h1>
+        <nav style="color: white;">
+            <ul>
+                <li>테마여행</li>
+                <li>패키지여행</li>
+                <li>가이드소개</li>
+                <li>항공일정</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main style="background-color: rgb(248, 228, 192);" >
+        <!-- 메인 사진 -->
+        <div class="slide" ><img src="https://images.unsplash.com/photo-1720986073399-f5c24e020ca1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" class="img1" width="1000">
+        <img src="https://images.unsplash.com/photo-1721391392874-1126e7cbdf57?q=80&w=2104&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""class="img2" width="1000">
+        </div>
+       <!-- 사이트 소개 -->
+        
+        <div class="dd">
+            <p style="font-size: 40px;"  ><b><i class="fa-solid fa-earth-americas"></i>테마<span style="color: orange;">여행</span> <i class="fa-solid fa-earth-americas"></i></b></p>
+            <P><b>각 나라의 전통의상, 전통음식을 위주로 떠나는 테마여행!</b></P>
+            <div class="kk">
+                <img src="https://plus.unsplash.com/premium_photo-1661936495413-875706d59696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVCJTgyJTk5JUVEJTgzJTgwfGVufDB8fDB8fHww" class="img2">
+            </div>
+        </div>
+        <div class="gg">
+            <p style="font-size: 40px;" ><b><i class="fa-solid fa-suitcase"></i><span style="color: orange;">패키지</span> 여행<i class="fa-solid fa-suitcase"></i></b></p>
+            <P><b>여러 사람들과 함께 떠나 즐거움은 <span style="color: red;">UP!</span><br>모든 것이 준비된 편안한 여행을 즐겨보세요</b></P>
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1685284166180-8dbea809861f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVBJUI0JTgwJUVBJUI0JTkxfGVufDB8fDB8fHww" alt="" class="img3">
+            </div>
+        </div>
+        <div class="hh" style="text-align: center;">
+            <p style="font-size: 40px;" ><b><i class="fa-solid fa-flag"></i>가이드<span style="color: orange;">소개</span><i class="fa-solid fa-flag"></i></b></p>
+            <P ><b>궁금한것이 있다면 물어보세요! 막힘 없이 대답해드리는 우리 가이드!</b></P>
+            <div>
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  width="500px"class="img4">
+            </div>
+        </div>
+        <div class="jj">
+            <p style="font-size: 40px;"><b><i class="fa-solid fa-plane"></i><span style="color: orange;">항공</span>일정<i class="fa-solid fa-plane"></i></b></p>
+            <p><b>당장 내일이라도 다른 나라로 떠날수 있을까요? 궁금하면 확인해 보세요!</b></p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1535284616907-29a0e221d893?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fCVFQiVCOSU4NCVFRCU5NiU4OSVFQSVCOCVCMHxlbnwwfHwwfHx8MA%3D%3D " width="500px" class="img5">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>kang980912@naver.com</p>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- 이건 슬라이드 스크립트임 -->
+   <script>  
+        $('.slide').slick({
+        autoplay:true,
+        dots: true,
+        infinite: true,
+        arraws:true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+        });
+      </script>
+      <!-- 이건 스크롤 -->
+    <script>
+        ScrollReveal().reveal('.img1',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.dd',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.gg',{
+            delay:400,
+            distance:'100px',
+            origin:'legt',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.hh',{
+            delay:400,
+            distance:'100px',
+            origin:'right',
+            reset: true
+        });
+    </script>
+     <script>
+        ScrollReveal().reveal('.jj',{
+            delay:400,
+            distance:'100px',
+            origin:'right',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.img2',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.img3',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.img4',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.img5',{
+            delay:400,
+            distance:'100px',
+            origin:'bottom',
+            reset: true
+        });
+    </script>
+</body>
+</html>
